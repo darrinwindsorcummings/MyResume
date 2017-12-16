@@ -1,0 +1,230 @@
+<!doctype html>
+
+<html lang="en"> 
+<head>
+    <meta charset="utf-8"/> 
+    <title>Printable Template</title>
+    <style>
+        @page {
+        margin: 3mm;
+        }
+        @media all {
+	   .page-break	{ display: none; page-break-after: always; float: none; }
+        }
+        @media print {
+	   .page-break	{ display: none; page-break-after: always; float: none; }
+        }
+        body{
+            font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+            font-size: 12pt;
+        }
+        .header { 
+            height: 2mm; width: 100%; 
+        }
+        .outershell {
+            height: 98vh; 
+            width: 100%; 
+            border: 1px solid black;
+            page-break-after: always; 
+            page-break-inside: avoid; 
+            max-width: 206mm; 
+            max-height: 269mm; 
+            min-width: 205mm; 
+            min-height: 268mm;
+            counter-increment: page;
+        }
+        .innershell {
+            height: 96vh;
+            width: 98%;
+            max-height:265mm;
+            min-width: 200mm;
+            min-height: 255mm;
+            margin: 2mm;
+        }
+        .pagecontent {
+            height: 94vh;
+            width: 100%;
+            min-height: 258mm;
+            max-height: 259mm;
+        }
+        .greybox { 
+            height: fit-content;
+            width: 100%;
+            background-color: lightgray;
+            font-weight: bold;
+            padding: 1mm;
+            box-sizing: border-box;
+        }
+        .clearbox {
+            width: 100%;
+            padding:1mm;
+            box-sizing:border-box;
+        }
+        .infostretch {
+            display:table-cell;
+            width:100%;
+            padding:1mm;
+        }
+        .infoshrink {
+            display:table-cell;
+            width:fit-content;
+            white-space:nowrap;
+            padding:1mm;
+        }
+        .leftbar {
+            width:27%;
+            float:left;
+            padding-right: 2mm;
+            height: 90%;
+            box-sizing:border-box;
+        }
+        .rightbar {
+            width:73%;
+            float: right;
+            height:90%;
+            box-sizing:border-box;
+            line-height:1.4;
+        }
+        .footerbar {
+            height: 6mm;
+            width: 100%;
+            float: bottom;
+            background-color: lightgray;
+            text-align: center;
+        }
+    </style>    
+</head>    
+    
+<body>
+<!--PAGE ONE-->
+<div class="outershell">
+    <div class="innershell">
+        <div class="pagecontent">
+            <div class="greybox" style="font-size: 200%;">
+                <div class="infostretch">
+                Darrin Windsor-Cummings
+                </div>
+                <div class="infoshrink" style="text-align: right">
+                darrinwc@gmail.com
+                </div>
+            </div>
+            <div class="clearbox">
+            </div>
+            <div class="leftbar" style="line-height:1.2">
+                <div class="greybox" style="text-align:center;font-weight:bold;">
+                    OBJECTIVES
+                </div>
+                <div class="clearbox" style="text-align:justify;">
+                    Full stack software developer with a focus on mobile and web applications, combining purposeful research and education with powerful personal drive, outstanding abstraction ability, and eleven year background in wireless technology sales.
+                </div>
+                <div class="greybox" style="text-align:center;font-weight:bold;">
+                    LANGUAGES
+                </div>
+                <div class="clearbox" style="text-align:center;">
+                    HTML<br/>
+                    XML<br/>
+                    CSS<br/>
+                    JavaScript, Node<br/>
+                    jQuery<br/>
+                    C<br/>
+                    Python<br/>
+                    SQL<br/>
+                    Gremlin<br/>
+                    git, GitHub
+                </div>
+                <div class="greybox" style="text-align:center;font-weight:bold;">
+                    SOFTWARE
+                </div>
+                <div class="clearbox" style="text-align:center;">
+                    Visual Studio Code<br/>
+                    Visual Studio 2017<br/>
+                    MS Word, Excel, Powerpoint<br/>
+                    MS SQL Server 2017<br/>
+                    Appcelerator Titanium<br/>
+                    Janusgraph, Neo4j<br/>
+                    NoSQL, Graph DB<br/>
+                    Express<br/>
+                    Nginx<br/>
+                    SSH<br/>
+                </div>
+                <div class="greybox" style="text-align:center;font-weight:bold;">
+                    OS / FRAMEWORKS
+                </div>
+                <div class="clearbox" style="text-align:center;">
+                    Windows 10, XP, 98<br/>
+                    Linux, Ubuntu<br/>
+                    AWS Services: EC2, S3, RDS, DynamoDB, Lambda, SNS, Lightsail, Cloud9, IAM, Route 53, API Gateway<br/>
+                </div>
+                <div class="greybox" style="text-align:center;font-weight:bold;">
+                    REFERENCES
+                </div>
+                <div class="clearbox" style="text-align:center;font-size: 90%">
+                    Bob Fortenberry<br/>
+                    901.316.6154<br/>
+                    Brad Montgomery<br/>
+                    870.514.4746
+                </div>
+            </div>
+            <div class="rightbar">
+                <div class="greybox">
+                    2707 Country Lawn Cove, Memphis TN 38133<br/>
+                    M 901.652.1478
+                </div>
+                <div class="clearbox">
+                </div>
+                <div class="greybox" style="text-align:center;font-weight:bold;">
+                    ACCOMPLISHMENTS
+                </div>
+                <div class="clearbox" style="text-align:left;font-size:85%">
+                    <li>Contributed critical elements to a project that eliminated a $30,000 monthly Salesforce file repository service by building an intranet website using Node.js and a SQL and NoSQL graph database backend. Using asychronous Node.js, built a series of modules to extract metadata from ZIP archived PDFs and stored the data in a SQL database used as a relational table to search by attribute and return PDFs located in a graph database. Set up instance of JanusGraph in a Docker shell on Linux EC2 with DynamoDB backend for migration of sorted documents from Neo4j.</li>
+                    <li>Created a series of contract document templates with HTML and CSS to duplicate MS word versions, while still remaining compatible with app Javascript variables and Adobe EchoSign signatures. The tempates allowed for a user to create, retrieve, and print sales documents as PDFs much faster due to reduced size, and with no additional apps required on the device.</li>
+                    <li>Used Appcelerator Titanium Alloy to troubleshoot sales applications for iPad and iPhone that use multiple APIs and vendor services, practicing a holistic approach and focusing on understanding the design of systems. </li>
+                    <li>As a personal project, built a set of web apps to function as a presentation tool with a remote control, using AWS S3, EC2, and RDS to complete a customized solution for myself. The remote featured a database of notes for each slide on the presentation app to be displayed to remote app, with a timer, scroll buttons, and a soft key to trigger dynamic content.</li>
+                </div>
+                <div class="greybox" style="text-align:center;font-weight:bold;">
+                    EXPERIENCE
+                </div>
+                <div class="clearbox" style="text-align:left; font-size:85%">
+                    <b>SERVICEMASTER</b> - Software Development Intern 9.2017-present<br/> 
+                    Worked with a team to build mobile sales applications, middleware, and supporting data systems for all Terminix sales reps. Joined the team during the release of new iPad and iPhone apps, gaining valuable experience with bug fixes, rapidly changing dependencies, and new feature development.<br/>
+                    <b>VERIZON WIRELESS</b> - Sales/Solution Specialist  6.2014-9.2017<br/>
+                    Sales and technical support, primarily focused on generating service contracts for consumer and business accounts with additional revenue from a range of related products and services. Refined communication skills, studied social sciences, and practiced self-motivation techniques, building a broad network of contacts to ensure strong growth in future sales and business ventures.<br/>
+                    <b>CARMAX</b> - Sales Consultant - 1.2013-6.2014<br/>
+                    <b>NOOR COMMUNICATIONS</b> - Store Manager  7.2012-1.2013<br/>
+                    Increased store business 21% monthly average for six consecutive months, more than doubling previous store targets.<br/>
+                    <b>T-MOBILE WIRELESS</b> - Sales Consultant  7.2006-8.2011<br/> 
+                    Trained new sales staff in emerging technologies and software updates, during a time of rapid industry change while exceeding 140% to targeted goals.
+
+                </div>
+                <div class="greybox" style="text-align:center;font-weight:bold;">
+                    EDUCATION AND TRAINING
+                </div>
+                <div class="clearbox" style="text-align:left; font-size:85%">
+                    <b>Tech901</b>, Memphis, TN<br/>
+                    Focused coding curriculum adding to the Harvard CS50: Introduction to Computer Science course. Concentration in C, Python, JavaScript, SQL, HTML and CSS to solve various problems and achieve a comprehensive base of coding experience.<br/>
+                    <b>University of Memphis</b>, Memphis, TN<br/>
+                    Senior : Business
+
+                </div>
+            </div>
+        </div>
+        <div class="footerbar">
+            Print a copy at darrinwc.com
+        </div>
+    </div>
+</div>
+    
+<!--PAGE TWO    
+<div class= "header"></div> 
+<div class="outershell">
+    <div class="innershell">
+        <div class="pagecontent">
+            <div class="titlenoborder">
+                <u>Expandable</u>
+            </div>
+        </div>
+    </div>
+</div>-->  
+    
+</body>
+</html>
