@@ -12,14 +12,16 @@
         @media all {
 	   .page-break	{ display: none; page-break-after: always; float: none; }
         }
-        @media all and (max-width: 1000px) {  body  { font-size:.5em;  } }
         @media print {
 	   .page-break	{ display: none; page-break-after: always; float: none; }
         }
         body{
             font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
             font-size: 12pt;
-
+            -webkit-text-size-adjust: 100%;
+        }
+        html {
+        -webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
         }
         .header { 
             height: 2mm; width: 100%; 
