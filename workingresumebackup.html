@@ -2,8 +2,9 @@
 
 <html lang="en"> 
 <head>
-    <meta charset="utf-8"/> 
-    <title>Printable Template</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.95">
+    <title>PrintableResume</title>
     <style>
         @page {
         margin: 3mm;
@@ -13,39 +14,53 @@
         }
         @media print {
 	   .page-break	{ display: none; page-break-after: always; float: none; }
+       .noprint  { display: none; float: none; }
         }
         body{
-            font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
-            font-size: 12pt;
+            font-family: Arial, Tahoma sans-serif;
+            font-size: 10.5pt;
+        }
+        .noprint {
+            height:20mm;
+            width:60mm;
+            padding:3mm;
+        }
+        .printbutton{
+            border-radius: 15px;
+            border: 2px solid black;
+            background-color: #33FF33;
+            text-align:center;
+            font-size:20pt;
+            height:100%;
+            width:100%;
+            line-height:3;
+            font-family: Arial, Tahoma, sans-serif;
+        }
+        a {
+            color:black;
+            text-decoration:none;
         }
         .header { 
             height: 2mm; width: 100%; 
         }
         .outershell {
-            height: 98vh; 
             width: 100%; 
             border: 1px solid black;
             page-break-after: always; 
-            page-break-inside: avoid; 
-            max-width: 206mm; 
-            max-height: 269mm;
-            min-width: 205mm; 
-            min-height: 268mm;
+            page-break-inside: avoid;  
+            width: 205mm; 
+            height: 268mm;
             counter-increment: page;
         }
         .innershell {
-            height: 96vh;
             width: 98%;
-            max-height:265mm;
-            min-width: 200mm;
-            min-height: 255mm;
+            width: 200mm;
+            height: 255mm;
             margin: 2mm;
         }
         .pagecontent {
-            height: 94vh;
             width: 100%;
-            min-height: 258mm;
-            max-height: 259mm;
+            height: 258mm;
         }
         .greybox { 
             height: fit-content;
@@ -54,6 +69,9 @@
             font-weight: bold;
             padding: 1mm;
             box-sizing: border-box;
+            font-family: Arial, Tahoma sans-serif;
+            padding-top: 1.5mm;
+            background-color: #B4CDCD
         }
         .clearbox {
             width: 100%;
@@ -91,30 +109,43 @@
             float: bottom;
             background-color: lightgray;
             text-align: center;
+            line-height: 1.7;
         }
     </style>    
 </head>    
     
 <body>
 <!--PAGE ONE-->
+<div class="noprint">
+    <a href="PrintableResume.pdf" download="Darrin Windsor-Cummings">
+        <div class= "printbutton">
+            <b>Download PDF</b>
+        </div>
+    </a>
+</div>
 <div class="outershell">
     <div class="innershell">
         <div class="pagecontent">
-            <div class="greybox" style="font-size: 200%;">
+            <div class="greybox" style="font-size: 20pt;">
                 <div class="infostretch">
                 Darrin Windsor-Cummings
+                    <div class="clearbox" style="font-size:11pt">
+                    2707 Country Lawn Cove, Memphis TN 38133<br/>
+                    </div>
                 </div>
                 <div class="infoshrink" style="text-align: right">
-                darrinwc@gmail.com
+                    darrinwc@gmail.com
+                    <div class="clearbox" style="font-size:11pt">
+                    901.652.1478
+                    </div>
                 </div>
             </div>
-            <div class="clearbox">
-            </div>
-            <div class="leftbar" style="line-height:1.2">
+            <div class="clearbox"></div>
+            <div class="leftbar" style="line-height:1.3">
                 <div class="greybox" style="text-align:center;font-weight:bold;">
                     OBJECTIVES
                 </div>
-                <div class="clearbox" style="text-align:justify;">
+                <div class="clearbox" style="text-align:center;padding-left:0;padding-right:0;">
                     Full stack software developer with a focus on mobile and web applications, combining purposeful research and education with powerful personal drive, outstanding abstraction ability, and eleven year background in wireless technology sales.
                 </div>
                 <div class="greybox" style="text-align:center;font-weight:bold;">
@@ -130,7 +161,7 @@
                     Python<br/>
                     SQL<br/>
                     Gremlin<br/>
-                    git, GitHub
+                    git
                 </div>
                 <div class="greybox" style="text-align:center;font-weight:bold;">
                     SOFTWARE
@@ -138,11 +169,12 @@
                 <div class="clearbox" style="text-align:center;">
                     Visual Studio Code<br/>
                     Visual Studio 2017<br/>
-                    MS Word, Excel, Powerpoint<br/>
+                    MS Office Suite<br/>
                     MS SQL Server 2017<br/>
                     Appcelerator Titanium<br/>
-                    Janusgraph, Neo4j<br/>
-                    NoSQL, Graph DB<br/>
+                    Janusgraph<br/>
+                    Neo4j<br/>
+                    NoSQL<br/>
                     Express<br/>
                     Nginx<br/>
                     SSH<br/>
@@ -151,65 +183,57 @@
                     OS / FRAMEWORKS
                 </div>
                 <div class="clearbox" style="text-align:center;">
-                    Windows 10, XP, 98<br/>
-                    Linux, Ubuntu<br/>
+                    Windows 10<br/>
+                    Linux Ubuntu<br/>
                     AWS Services: EC2, S3, RDS, DynamoDB, Lambda, SNS, Lightsail, Cloud9, IAM, Route 53, API Gateway<br/>
                 </div>
                 <div class="greybox" style="text-align:center;font-weight:bold;">
                     REFERENCES
                 </div>
-                <div class="clearbox" style="text-align:center;font-size: 90%">
+                <div class="clearbox" style="text-align:center;">
                     Bob Fortenberry<br/>
                     901.316.6154<br/>
                     Brad Montgomery<br/>
                     870.514.4746
                 </div>
             </div>
-            <div class="rightbar">
-                <div class="greybox">
-                    2707 Country Lawn Cove, Memphis TN 38133<br/>
-                    M 901.652.1478
-                </div>
-                <div class="clearbox">
-                </div>
+            <div class="rightbar" style="line-height:1.5">
                 <div class="greybox" style="text-align:center;font-weight:bold;">
                     ACCOMPLISHMENTS
                 </div>
-                <div class="clearbox" style="text-align:left;font-size:85%">
-                    <li>Contributed critical elements to a project that eliminated a $30,000 monthly Salesforce file repository service by building an intranet website using Node.js and a SQL and NoSQL graph database backend. Using asychronous Node.js, built a series of modules to extract metadata from ZIP archived PDFs and stored the data in a SQL database used as a relational table to search by attribute and return PDFs located in a graph database. Set up instance of JanusGraph in a Docker shell on Linux EC2 with DynamoDB backend for migration of sorted documents from Neo4j.</li>
-                    <li>Created a series of contract document templates with HTML and CSS to duplicate MS word versions, while still remaining compatible with app Javascript variables and Adobe EchoSign signatures. The tempates allowed for a user to create, retrieve, and print sales documents as PDFs much faster due to reduced size, and with no additional apps required on the device.</li>
-                    <li>Used Appcelerator Titanium Alloy to troubleshoot sales applications for iPad and iPhone that use multiple APIs and vendor services, practicing a holistic approach and focusing on understanding the design of systems. </li>
-                    <li>As a personal project, built a set of web apps to function as a presentation tool with a remote control, using AWS S3, EC2, and RDS to complete a customized solution for myself. The remote featured a database of notes for each slide on the presentation app to be displayed to remote app, with a timer, scroll buttons, and a soft key to trigger dynamic content.</li>
+                <div class="clearbox" style="text-align:left;font-size:10pt">
+                    <li>Contributed critical elements to the development of an intranet website, eliminating dependency on a $30,000 monthly Salesforce file repository service. Created a series of modules to extract metadata from ZIP archived PDFs and stored the data in a SQL database used as a relational table to search by attribute and return PDFs located in a graph database. Set up instance of JanusGraph in a Docker shell on Linux EC2 with DynamoDB backend for migration of sorted documents from Neo4j.</li>
+                    <li>Created a series of contract document templates with HTML and CSS to duplicate the functionality of MS Word versions. The templates allowed for a user to create, retrieve, and print sales documents as PDFs much faster due to reduced size and no additional apps required on the device.</li>
+                    <li>Used Appcelerator Titanium Alloy to troubleshoot sales apps for iPad and iPhone that use multiple APIs and vendor services, practicing a holistic approach and focusing on understanding the design of systems. </li>
+                    <li>Built two web apps to function as a full-screen presentation tool with a mobile remote control, using AWS S3, EC2, and RDS to complete a customized slideshow presentation solution. The remote features a timer, database of notes for each slide of the presentation to be displayed on the remote app, with scroll buttons and soft key to trigger dynamic content.</li>
                 </div>
                 <div class="greybox" style="text-align:center;font-weight:bold;">
                     EXPERIENCE
                 </div>
-                <div class="clearbox" style="text-align:left; font-size:85%">
+                <div class="clearbox" style="text-align:left; font-size:10pt">
                     <b>SERVICEMASTER</b> - Software Development Intern 9.2017-present<br/> 
-                    Worked with a team to build mobile sales applications, middleware, and supporting data systems for all Terminix sales reps. Joined the team during the release of new iPad and iPhone apps, gaining valuable experience with bug fixes, rapidly changing dependencies, and new feature development.<br/>
+                    Developed mobile sales apps with a team, encompassing aspects of front-end function, user experience, middleware and supporting data systems for all Terminix sales reps. Joined the team during the release of new iPad and iPhone apps, gaining valuable experience with bug fixes, rapidly changing dependencies, and new feature development.<br/>
                     <b>VERIZON WIRELESS</b> - Sales/Solution Specialist  6.2014-9.2017<br/>
                     Sales and technical support, primarily focused on generating service contracts for consumer and business accounts with additional revenue from a range of related products and services. Refined communication skills, studied social sciences, and practiced self-motivation techniques, building a broad network of contacts to ensure strong growth in future sales and business ventures.<br/>
                     <b>CARMAX</b> - Sales Consultant - 1.2013-6.2014<br/>
                     <b>NOOR COMMUNICATIONS</b> - Store Manager  7.2012-1.2013<br/>
-                    Increased store business 21% monthly average for six consecutive months, more than doubling previous store targets.<br/>
+                    More than doubled previous store revenue, developed leadership skills and learned to use data to refine processes.<br/>
                     <b>T-MOBILE WIRELESS</b> - Sales Consultant  7.2006-8.2011<br/> 
-                    Trained new sales staff in emerging technologies and software updates, during a time of rapid industry change while exceeding 140% to targeted goals.
-
+                    Trained new sales staff in emerging technologies and software updates, during a time of rapid industry change while exceeding 140% of targeted goals.
                 </div>
                 <div class="greybox" style="text-align:center;font-weight:bold;">
                     EDUCATION AND TRAINING
                 </div>
-                <div class="clearbox" style="text-align:left; font-size:85%">
-                    <b>Tech901</b>, Memphis, TN<br/>
+                <div class="clearbox" style="text-align:left; font-size:10pt">
+                    <b>Tech901</b>, Memphis, TN - 4.2017-8.2017<br/>
                     Focused coding curriculum adding to the Harvard CS50: Introduction to Computer Science course. Concentration in C, Python, JavaScript, SQL, HTML and CSS to solve various problems and achieve a comprehensive base of coding experience.<br/>
-                    <b>University of Memphis</b>, Memphis, TN<br/>
-                    Senior : Business
-
+                    <b>University of Memphis</b>, Memphis, TN - 8.2000-current<br/>
+                    Undergraduate Business - <i>in progress</i>
                 </div>
             </div>
         </div>
-        <div class="footerbar">
-            Print a copy at darrinwc.com
+        <div class="footerbar" style="background-color:#B4CDCD">
+            Additional resources at darrinwc.com
         </div>
     </div>
 </div>
